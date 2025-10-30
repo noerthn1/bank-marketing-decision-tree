@@ -98,6 +98,6 @@ This improved minority recall and macro F1 without hurting accuracy.
  [ 68  36]]
 ```
 ### Interpretation
--- The tuned model improved its ability to detect positive (“yes”) outcomes.
--- Accuracy remained stable → the model didn’t overfit.
--- Macro F1 improved → better fairness across both classes.
+-The tuned model improved its ability to detect positive (“yes”) outcomes.
+- Accuracy remained stable → the model didn’t overfit.
+- Macro F1 improved → better fairness across both classes.
