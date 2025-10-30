@@ -99,7 +99,44 @@ This adjustment improved **minority class recall** and **macro F1-score** withou
 [[768  33]
  [ 68  36]]
 ```
-### Interpretation
--The tuned model improved its ability to detect positive (“yes”) outcomes.
+## Interpretation
+- The tuned model improved its ability to detect positive (“yes”) outcomes.
 - Accuracy remained stable → the model didn’t overfit.
 - Macro F1 improved → better fairness across both classes.
+
+## Feature Importance
+Top features influencing the decision tree:
+| Rank | Feature            | Importance |
+| :--: | :----------------- | :--------: |
+|   1  | `duration`         |    0.32    |
+|   2  | `poutcome_success` |    0.24    |
+|   3  | `previous`         |    0.15    |
+|   4  | `contact_cellular` |    0.12    |
+|   5  | `age`              |    0.08    |
+
+## Tech stack
+| Tool                    | Purpose                 |
+| ----------------------- | ----------------------- |
+| **Python (3.10)**       | Core language           |
+| **pandas, numpy**       | Data manipulation       |
+| **scikit-learn**        | Modeling and evaluation |
+| **matplotlib, seaborn** | Visualization           |
+| **Google Colab**        | Development environment |
+
+## Key takeaways
+- Accuracy isn’t everything — F1 and recall matter for imbalanced data.
+- Decision Trees are simple, interpretable models perfect for exploratory projects.
+- Pipelines + GridSearchCV make your workflow clean, reproducible, and professional.
+- Handling class imbalance significantly affects fairness and usability of predictions.
+
+## Conclusion
+The tuned Decision Tree classifier achieved:
+
+> 💡 *Balanced, interpretable, and consistent predictions with improved minority-class recall.*
+
+This project demonstrates full-cycle ML understanding:
+✅ Data preprocessing
+✅ Pipeline creation
+✅ Hyperparameter tuning
+✅ Class imbalance handling
+✅ Model evaluation & interpretation
