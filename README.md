@@ -78,9 +78,11 @@ param_grid = {
 ```
 
 ### Step 5 - Handling Class Imbalance
-The dataset had 88% “no” and 12% “yes”.
-To mitigate this, we used class_weight='balanced' during tuning.
-This improved minority recall and macro F1 without hurting accuracy.
+The dataset had **88% "no"** and **12% "yes"** classes.  
+To mitigate this imbalance, we used `class_weight='balanced'` during model tuning.  
+
+This adjustment improved **minority class recall** and **macro F1-score** without reducing overall accuracy.
+
 
 ### Results
 | Metric          | Before Tuning | After Tuning |
