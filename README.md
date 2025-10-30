@@ -43,3 +43,25 @@ model_pipeline = Pipeline(steps=[
     ('preprocessor', preprocessor),
     ('classifier', DecisionTreeClassifier(random_state=42))
 ])
+
+### Step 3 — Model Training and Evaluation
+
+The base Decision Tree model achieved:
+
+- **Accuracy**: 0.89
+- **Precision (yes)**: 0.55
+- **Recall (yes)**: 0.31
+- **F1-score (yes)**: 0.40
+
+### Step 4 — Hyperparameter Tuning
+
+Used GridSearchCV with 5-fold cross-validation over parameters:
+
+```python
+param_grid = {
+    'classifier__criterion': ['gini', 'entropy'],
+    'classifier__max_depth': [3, 5, 7, 10, None],
+    'classifier__min_samples_split': [2, 5, 10],
+    'classifier__min_samples_leaf': [1, 2, 5],
+    'classifier__class_weight': [None, 'balanced']
+}
