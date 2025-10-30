@@ -136,7 +136,11 @@ The tuned Decision Tree classifier achieved:
 
 This project demonstrates full-cycle ML understanding:
 ✅ Data preprocessing
+
 ✅ Pipeline creation
+
 ✅ Hyperparameter tuning
+
 ✅ Class imbalance handling
+
 ✅ Model evaluation & interpretation
