@@ -115,9 +115,7 @@ Top features influencing the decision tree:
 |   4  | `contact_cellular` |    0.12    |
 |   5  | `age`              |    0.08    |
 
-<p align="center">
-  <img src="img/features_importances.png" alt="Top 10 Feature Importances" width="500">
-</p>
+![Top 10 Feature Importances](img/feature_importances.png)
 
 
 ## Tech stack
