@@ -116,7 +116,7 @@ Top features influencing the decision tree:
 |   5  | `age`              |    0.08    |
 
 <p align="center">
-  <img src="feature_importances.png" alt="Top 10 Feature Importances" width="500">
+  <img src="img/feature_importances.png" alt="Top 10 Feature Importances" width="500">
 </p>
 
 
