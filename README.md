@@ -43,7 +43,7 @@ model_pipeline = Pipeline(steps=[
     ('preprocessor', preprocessor),
     ('classifier', DecisionTreeClassifier(random_state=42))
 ])
-
+```
 ### Step 3 — Model Training and Evaluation
 
 The base Decision Tree model achieved:
