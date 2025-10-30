@@ -106,6 +106,7 @@ This adjustment improved **minority class recall** and **macro F1-score** withou
 
 ## Feature Importance
 Top features influencing the decision tree:
+
 | Rank | Feature            | Importance |
 | :--: | :----------------- | :--------: |
 |   1  | `duration`         |    0.32    |
@@ -113,6 +114,11 @@ Top features influencing the decision tree:
 |   3  | `previous`         |    0.15    |
 |   4  | `contact_cellular` |    0.12    |
 |   5  | `age`              |    0.08    |
+
+<p align="center">
+  <img src="feature_importances.png" alt="Top 10 Feature Importances" width="500">
+</p>
+
 
 ## Tech stack
 | Tool                    | Purpose                 |
