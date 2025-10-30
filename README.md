@@ -69,6 +69,7 @@ param_grid = {
 
 ```
 #### Best Parameters
+```python
 {
     'classifier__criterion': 'gini', 
     'classifier__max_depth': 3, 
