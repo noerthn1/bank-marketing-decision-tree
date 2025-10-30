@@ -75,3 +75,29 @@ param_grid = {
     'classifier__max_depth': 3, 
     'classifier__min_samples_split': 2
 }
+```
+
+### Step 5 - Handling Class Imbalance
+The dataset had 88% “no” and 12% “yes”.
+To mitigate this, we used class_weight='balanced' during tuning.
+This improved minority recall and macro F1 without hurting accuracy.
+
+### Results
+| Metric          | Before Tuning | After Tuning |
+| :-------------- | :-----------: | :----------: |
+| Accuracy        |      0.89     |     0.89     |
+| Precision (yes) |      0.55     |     0.52     |
+| Recall (yes)    |      0.31     |   **0.35**   |
+| F1 (yes)        |      0.40     |   **0.42**   |
+| Macro F1        |      0.67     |   **0.68**   |
+
+
+#### Confusion Matrix (After tuning)
+```lura
+[[768  33]
+ [ 68  36]]
+```
+### Interpretation
+-- The tuned model improved its ability to detect positive (“yes”) outcomes.
+-- Accuracy remained stable → the model didn’t overfit.
+-- Macro F1 improved → better fairness across both classes.
