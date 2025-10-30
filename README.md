@@ -43,6 +43,7 @@ model_pipeline = Pipeline(steps=[
     ('preprocessor', preprocessor),
     ('classifier', DecisionTreeClassifier(random_state=42))
 ])
+
 ```
 ### Step 3 — Model Training and Evaluation
 
@@ -64,4 +65,12 @@ param_grid = {
     'classifier__min_samples_split': [2, 5, 10],
     'classifier__min_samples_leaf': [1, 2, 5],
     'classifier__class_weight': [None, 'balanced']
+}
+
+```
+#### Best Parameters
+{
+    'classifier__criterion': 'gini', 
+    'classifier__max_depth': 3, 
+    'classifier__min_samples_split': 2
 }
